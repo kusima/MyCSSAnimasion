@@ -1,1 +1,1 @@
-# MyCSSAnimasion
+CSS を使ったアニメーションの練習です
