@@ -6,8 +6,9 @@ body {
 	width: 100px;
 	height: 100px;
 	background-color: orange;
-	transition-property: transform, background;
-	transition-duration: 1s;
+	transition-property: transform,;
+	transition-duration: .3s;
+	transition-delay: .2s;
 	/* transform-origin: top left; */
 }
 
@@ -22,5 +23,5 @@ body {
 	 */
 	/* transform: scale(.5,2); */
 	transform: translateX(30px);
-	background: skyblue;
+	/* background: skyblue; */
 }
