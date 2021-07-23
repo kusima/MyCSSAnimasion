@@ -6,9 +6,9 @@ body {
 	width: 100px;
 	height: 100px;
 	background-color: orange;
-  transition-property: transform;
-  transition-duration: 1s;
-	transform-origin: top left;
+	transition-property: transform, background;
+	transition-duration: 1s;
+	/* transform-origin: top left; */
 }
 
 .box:hover {
@@ -20,5 +20,7 @@ body {
 	/* transform: translateX(100px) rotate(30deg);/ */
 	/* transform: rotate(30deg);
 	 */
-	 transform: scale(.5,2);
+	/* transform: scale(.5,2); */
+	transform: translateX(30px);
+	background: skyblue;
 }
