@@ -1,20 +1,22 @@
-
 .box {
 	width: 100px;
 	height: 100px;
 	background-color: orange;
-animation-name: move;
-animation-duration: 2s;
+	animation-name: move;
+	animation-duration: 2s;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
 }
 
 @keyframes move {
-	0%{
+	0% {
 		transform: none;
 	}
-		80%{
-			transform: translate(200px) rotate(360deg);
-		}
-		100%{
-			transform: translateX(300px) rotate(360deg);
-		}
+	80% {
+		transform: translate(200px) rotate(360deg);
 	}
+	100% {
+		transform: translateX(300px) rotate(360deg);
+	}
+}
