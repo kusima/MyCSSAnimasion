@@ -2,15 +2,23 @@ body {
 	padding: 10px;
 }
 
-.btn {
-	padding: 16px 32px;
-	background-color: hsl(240, 100%, 80%);
-	color: #fff;
-	border-radius: 40px;
-	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-	cursor: pointer;
-	transition: background .2s;
+.loading{
+	width: 40px;
+	height: 40px;
+	border: 8px solid #ccc;
+	border-right-color: transparent;
+border-radius: 50%;
+animation: spin .8s infinite linear;
 }
-.btn:hover {
-	background: hsl(200, 100%, 50%);
+
+@keyframes spin{
+	/* 0%{
+		transform: none;
+	} */
+	from {
+		transform: none;
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
