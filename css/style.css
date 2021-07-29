@@ -1,7 +1,7 @@
 body {
 	padding: 10px;
 }
-.message{
+.message {
 	width: 300px;
 	padding: 8px 16px;
 	background: rgb(41, 41, 41);
@@ -11,4 +11,25 @@ body {
 	position: fixed;
 	right: 32px;
 	bottom: 32px;
+	animation: popup 3s forwards;
+}
+
+@keyframes popup {
+	0% {
+		transform: translateY(20px);
+		opacity: 0;
+	}
+
+	20%,
+	80% {
+		transform: none;
+		opacity: 1;
+	}
+	/* 80%{
+		transform: none;
+	} */
+	100% {
+		transform: translateY(20px);
+		opacity: 0;
+	}
 }
