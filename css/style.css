@@ -1,24 +1,16 @@
-.box {
-	width: 100px;
-	height: 100px;
-	background-color: orange;
-	/* animation-name: move;
-	animation-duration: 2s;
-	animation-delay: 1s;
-	animation-fill-mode: forwards;
-	animation-iteration-count: infinite; */
-animation: move 2s infinite 1s;
+body {
+	padding: 10px;
 }
 
-@keyframes move {
-	0% {
-		transform: none;
-		animation-timing-function: linear;
-	}
-	80% {
-		transform: translate(200px) rotate(360deg);
-	}
-	100% {
-		transform: translateX(300px) rotate(360deg);
-	}
+.btn {
+	padding: 16px 32px;
+	background-color: hsl(240, 100%, 80%);
+	color: #fff;
+	border-radius: 40px;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	transition: background .2s;
+}
+.btn:hover {
+	background: hsl(200, 100%, 50%);
 }
